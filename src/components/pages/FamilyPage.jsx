@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { toast } from "react-toastify";
 import ApperIcon from "@/components/ApperIcon";
-import Button from "@/components/atoms/Button";
-import Loading from "@/components/ui/Loading";
-import Error from "@/components/ui/Error";
 import Empty from "@/components/ui/Empty";
+import Error from "@/components/ui/Error";
+import Loading from "@/components/ui/Loading";
+import Button from "@/components/atoms/Button";
 import { familyService } from "@/services/api/familyService";
 
 const FamilyPage = () => {
@@ -131,7 +131,7 @@ const FamilyPage = () => {
                 <input
                   type="text"
                   value={newMember.name}
-                  onChange={(e) => setNewMember({ ...newMember, name: e.target.value })}
+onChange={(e) => setNewMember({ ...newMember, name: e.target.value })}
                   placeholder="Enter family member name"
                   className="form-input"
                   required
@@ -197,12 +197,12 @@ const FamilyPage = () => {
                 <div className="flex items-center space-x-3">
                   <div
                     className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold"
-                    style={{ backgroundColor: member.color }}
+style={{ backgroundColor: member.color }}
                   >
-                    {member.name.charAt(0).toUpperCase()}
+                    {member.Name?.charAt(0).toUpperCase() || member.name?.charAt(0).toUpperCase()}
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-800">{member.name}</h3>
+<div>
+                    <h3 className="font-semibold text-gray-800">{member.Name || member.name}</h3>
                     {member.birthday && (
                       <p className="text-sm text-gray-600">
                         {new Date(member.birthday).toLocaleDateString()}
@@ -225,7 +225,7 @@ const FamilyPage = () => {
                 <div className="flex items-center space-x-2 text-sm text-gray-600">
                   <ApperIcon name="Palette" className="w-4 h-4" />
                   <span>Color Theme</span>
-                </div>
+</div>
                 
                 {member.birthday && (
                   <div className="flex items-center space-x-2 text-sm text-gray-600">

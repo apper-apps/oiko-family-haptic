@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "@/App";
 import ApperIcon from "@/components/ApperIcon";
 import Button from "@/components/atoms/Button";
-
 const Header = () => {
+  const { logout } = useContext(AuthContext);
+  
   const navItems = [
     { path: "/", label: "Calendar", icon: "Calendar" },
     { path: "/family", label: "Family", icon: "Users" },
@@ -47,7 +50,7 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Actions */}
+{/* Actions */}
           <div className="flex items-center space-x-3">
             <Button
               variant="primary"
@@ -64,6 +67,16 @@ const Header = () => {
               className="p-2"
             >
               <ApperIcon name="Bell" className="w-4 h-4" />
+            </Button>
+            
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={logout}
+              className="flex items-center space-x-2"
+            >
+              <ApperIcon name="LogOut" className="w-4 h-4" />
+              <span className="hidden sm:inline">Logout</span>
             </Button>
           </div>
         </div>

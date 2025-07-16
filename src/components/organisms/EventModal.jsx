@@ -1,13 +1,12 @@
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { format } from "date-fns";
 import { toast } from "react-toastify";
 import ApperIcon from "@/components/ApperIcon";
-import Button from "@/components/atoms/Button";
 import FormField from "@/components/molecules/FormField";
-import { eventService } from "@/services/api/eventService";
+import Button from "@/components/atoms/Button";
 import { familyService } from "@/services/api/familyService";
-
+import { eventService } from "@/services/api/eventService";
 const EventModal = ({ isOpen, onClose, event = null, selectedDate = null }) => {
   const [formData, setFormData] = useState({
     title: "",
@@ -276,7 +275,7 @@ const EventModal = ({ isOpen, onClose, event = null, selectedDate = null }) => {
               <div className="space-y-2">
                 <label className="form-label">Assign To</label>
                 <div className="flex flex-wrap gap-2">
-                  {familyMembers.map((member) => (
+{familyMembers.map((member) => (
                     <button
                       key={member.Id}
                       type="button"
@@ -292,7 +291,7 @@ const EventModal = ({ isOpen, onClose, event = null, selectedDate = null }) => {
                           className="w-3 h-3 rounded-full"
                           style={{ backgroundColor: member.color }}
                         ></div>
-                        <span>{member.name}</span>
+                        <span>{member.Name || member.name}</span>
                       </div>
                     </button>
                   ))}
