@@ -1,0 +1,171 @@
+[
+  {
+    "Id": 1,
+    "title": "Family Movie Night",
+    "description": "Watch the new Marvel movie together with popcorn and snacks",
+    "startDate": "2024-01-15T19:00:00.000Z",
+    "endDate": "2024-01-15T21:30:00.000Z",
+    "category": "event",
+    "assignedTo": ["Mom", "Dad", "Sarah", "Tommy"],
+    "location": "Living Room",
+    "googleEventId": "abc123def456",
+    "recurrence": null,
+    "createdAt": "2024-01-01T10:00:00.000Z",
+    "updatedAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "Id": 2,
+    "title": "Take Out Trash",
+    "description": "Weekly trash collection - remember to separate recyclables",
+    "startDate": "2024-01-16T08:00:00.000Z",
+    "endDate": "2024-01-16T08:30:00.000Z",
+    "category": "chore",
+    "assignedTo": ["Tommy"],
+    "location": "Front Yard",
+    "googleEventId": null,
+    "recurrence": {
+      "type": "weekly",
+      "interval": 1,
+      "daysOfWeek": [2]
+    },
+    "createdAt": "2024-01-01T10:00:00.000Z",
+    "updatedAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "Id": 3,
+    "title": "Mom's Birthday",
+    "description": "Celebrate Mom's special day with cake and presents",
+    "startDate": "2024-01-20T00:00:00.000Z",
+    "endDate": "2024-01-20T23:59:59.000Z",
+    "category": "birthday",
+    "assignedTo": ["Dad", "Sarah", "Tommy"],
+    "location": "Home",
+    "googleEventId": "birthday123",
+    "recurrence": {
+      "type": "yearly",
+      "interval": 1
+    },
+    "createdAt": "2024-01-01T10:00:00.000Z",
+    "updatedAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "Id": 4,
+    "title": "Soccer Practice",
+    "description": "Weekly soccer practice for Sarah - bring water bottle and cleats",
+    "startDate": "2024-01-17T16:00:00.000Z",
+    "endDate": "2024-01-17T17:30:00.000Z",
+    "category": "event",
+    "assignedTo": ["Sarah"],
+    "location": "City Park Soccer Field",
+    "googleEventId": "soccer456",
+    "recurrence": {
+      "type": "weekly",
+      "interval": 1,
+      "daysOfWeek": [3]
+    },
+    "createdAt": "2024-01-01T10:00:00.000Z",
+    "updatedAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "Id": 5,
+    "title": "Grocery Shopping",
+    "description": "Weekly grocery run - check the shopping list on the fridge",
+    "startDate": "2024-01-18T14:00:00.000Z",
+    "endDate": "2024-01-18T15:30:00.000Z",
+    "category": "chore",
+    "assignedTo": ["Mom", "Dad"],
+    "location": "Whole Foods Market",
+    "googleEventId": null,
+    "recurrence": {
+      "type": "weekly",
+      "interval": 1,
+      "daysOfWeek": [4]
+    },
+    "createdAt": "2024-01-01T10:00:00.000Z",
+    "updatedAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "Id": 6,
+    "title": "Clean Bedroom",
+    "description": "Weekly bedroom cleaning - make bed, organize clothes, vacuum",
+    "startDate": "2024-01-19T10:00:00.000Z",
+    "endDate": "2024-01-19T11:00:00.000Z",
+    "category": "chore",
+    "assignedTo": ["Sarah"],
+    "location": "Sarah's Bedroom",
+    "googleEventId": null,
+    "recurrence": {
+      "type": "weekly",
+      "interval": 1,
+      "daysOfWeek": [5]
+    },
+    "createdAt": "2024-01-01T10:00:00.000Z",
+    "updatedAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "Id": 7,
+    "title": "Piano Lesson",
+    "description": "Weekly piano lesson with Mrs. Johnson - practice scales beforehand",
+    "startDate": "2024-01-21T15:00:00.000Z",
+    "endDate": "2024-01-21T16:00:00.000Z",
+    "category": "event",
+    "assignedTo": ["Tommy"],
+    "location": "Music Academy",
+    "googleEventId": "piano789",
+    "recurrence": {
+      "type": "weekly",
+      "interval": 1,
+      "daysOfWeek": [0]
+    },
+    "createdAt": "2024-01-01T10:00:00.000Z",
+    "updatedAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "Id": 8,
+    "title": "Family Game Night",
+    "description": "Monthly family game night - this month we're playing Monopoly",
+    "startDate": "2024-01-22T19:00:00.000Z",
+    "endDate": "2024-01-22T21:00:00.000Z",
+    "category": "event",
+    "assignedTo": ["Mom", "Dad", "Sarah", "Tommy"],
+    "location": "Dining Room",
+    "googleEventId": "gamenight101",
+    "recurrence": {
+      "type": "monthly",
+      "interval": 1
+    },
+    "createdAt": "2024-01-01T10:00:00.000Z",
+    "updatedAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "Id": 9,
+    "title": "Dentist Appointment",
+    "description": "6-month dental checkup and cleaning for Sarah",
+    "startDate": "2024-01-23T14:00:00.000Z",
+    "endDate": "2024-01-23T15:00:00.000Z",
+    "category": "event",
+    "assignedTo": ["Sarah"],
+    "location": "Smile Dental Care",
+    "googleEventId": "dentist202",
+    "recurrence": null,
+    "createdAt": "2024-01-01T10:00:00.000Z",
+    "updatedAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "Id": 10,
+    "title": "Wash Dishes",
+    "description": "Daily dishwashing duty - load/unload dishwasher and hand wash pots",
+    "startDate": "2024-01-24T20:00:00.000Z",
+    "endDate": "2024-01-24T20:30:00.000Z",
+    "category": "chore",
+    "assignedTo": ["Tommy"],
+    "location": "Kitchen",
+    "googleEventId": null,
+    "recurrence": {
+      "type": "daily",
+      "interval": 1
+    },
+    "createdAt": "2024-01-01T10:00:00.000Z",
+    "updatedAt": "2024-01-01T10:00:00.000Z"
+  }
+]

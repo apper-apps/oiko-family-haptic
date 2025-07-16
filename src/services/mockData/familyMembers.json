@@ -1,0 +1,38 @@
+[
+  {
+    "Id": 1,
+    "name": "Mom",
+    "color": "#7C9EF8",
+    "birthday": "1985-01-20",
+    "avatar": null,
+    "createdAt": "2024-01-01T10:00:00.000Z",
+    "updatedAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "Id": 2,
+    "name": "Dad",
+    "color": "#9B89D3",
+    "birthday": "1983-07-15",
+    "avatar": null,
+    "createdAt": "2024-01-01T10:00:00.000Z",
+    "updatedAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "Id": 3,
+    "name": "Sarah",
+    "color": "#8B7FE8",
+    "birthday": "2010-04-12",
+    "avatar": null,
+    "createdAt": "2024-01-01T10:00:00.000Z",
+    "updatedAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "Id": 4,
+    "name": "Tommy",
+    "color": "#52C782",
+    "birthday": "2012-09-08",
+    "avatar": null,
+    "createdAt": "2024-01-01T10:00:00.000Z",
+    "updatedAt": "2024-01-01T10:00:00.000Z"
+  }
+]
